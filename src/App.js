@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+// import About from './components/About/About';
+// import Events from './components/Events/Events';
+// import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
+// import Gallery from './components/Gallery/Gallery';
+// import Home from './components/Home/Home';
+// import Startup from './components/Startup/Startup';
+import Team from './components/Teams/Team';
+import Testimonial from './components/Testimonials/Testimonial';
+// import Wings from './components/Wings/Wing';
+// import Footer from './components/Footer/Footer';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+// import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
+import Contact from './components/Contact/Contact';
+const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={
+        <>
+        {/* <Home/>
+        <About/>
+        <Wings/>
+        <Events/>
+        <UpcomingEvents/>
+        <Gallery/>
+        <Startup/> */}
+        <Testimonial/>
+        <Team/>
+         {/* <Contact/> */}
+        {/* <Footer/>   */}
+        </>
+      }></Route>
+
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
