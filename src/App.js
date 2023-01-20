@@ -1,7 +1,7 @@
 import React from 'react';
 // import About from './components/About/About';
-// import Events from './components/Events/Events';
-// import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
+import Events from './components/Events/Events';
+import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents';
 import Gallery from './components/Gallery/Gallery';
 // import Home from './components/Home/Home';
 // import Startup from './components/Startup/Startup';
@@ -22,8 +22,8 @@ const App=()=> {
          {/* <Home/> */}
         {/* <About/> */}
         {/* <Wings/> */}
-        {/* <Events/> */}
-        {/* <UpcomingEvents/> */}
+        <Events/>
+        <UpcomingEvents/>
         <Gallery/>
         {/* <Startup/>  */}
         <Testimonial/>
