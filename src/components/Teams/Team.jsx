@@ -22,7 +22,7 @@ const Team = () => {
 
                       <div class="profile">
                           <span>
-                          <h3>PRAJABHAV MISHRA</h3>
+                          <h3>HARISH CHOUDHARY</h3>
                           <h4>Co-Ordinator</h4></span>
 
 
